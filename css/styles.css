@@ -391,8 +391,8 @@ ul {
 
   .main-heading::before {
     width: 394px;
-    top: 0;
-    left: -100rem;
+    top: -4.7rem;
+    left: -111.1rem;
     background-size: 394px 303px;
     background-image: url("../assets/desktop/image-hero-left.png");
   }
@@ -402,7 +402,7 @@ ul {
     width: 394px;
     height: 303px;
     position: absolute;
-    top: 0;
+    top: 0.8rem;
     right: -54rem;
     background-image: url("../assets/desktop/image-hero-right.png");
     background-size: 394px 303px;
