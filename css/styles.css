@@ -453,6 +453,7 @@ ul {
 
   .section-one .paragraph {
     width: min(100%, 54rem);
+    margin-top: 3rem;
   }
 
   /* Section Two */
