@@ -106,6 +106,11 @@ ul {
   margin: 4.8rem auto 0;
 }
 
+/* Main */
+.main {
+  overflow: hidden;
+}
+
 /* Hero */
 
 .hero {
@@ -122,7 +127,7 @@ ul {
 
 .main-heading::before {
   content: "";
-  width: 375px;
+  width: 100%;
   height: 153px;
   position: absolute;
   top: -20.1rem;
@@ -130,8 +135,14 @@ ul {
   right: 0;
   margin-inline: auto;
   background-image: url("../assets/tablet/image-hero.png");
-  background-size: 414px 153px;
+  background-size: cover;
   background-position: center;
+}
+
+.main-heading .heading-text {
+  display: inline-block;
+  width: min(100%, 32.7rem);
+  margin-inline: auto;
 }
 
 .hero .paragraph {
@@ -234,6 +245,7 @@ ul {
 
 .section-two .content-wrapper {
   margin-top: 3.6rem;
+  position: relative;
 }
 
 .section-two .subheading {
@@ -262,7 +274,7 @@ ul {
 
 /* Media Queries */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 650px) {
   /* Shared Styles */
 
   .container {
@@ -278,15 +290,16 @@ ul {
   .main-heading {
     font-size: 4.8rem;
     line-height: 4.8rem;
-    /* width: min(100%, 33.9rem); */
     margin: 0 auto;
   }
 
   .main-heading::before {
-    width: 768px;
     height: 303px;
     top: -37.5rem;
-    background-size: 820px 303px;
+  }
+
+  .main-heading .heading-text {
+    width: min(100%, 33.9rem);
   }
 
   .hero .paragraph {
@@ -352,7 +365,7 @@ ul {
     margin: 4rem auto 0;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1175px) {
   /* Shared Styles */
 
   .container {
@@ -396,6 +409,10 @@ ul {
     /* background-position: center; */
   }
 
+  .main-heading .heading-text {
+    width: 100%;
+  }
+
   .hero .paragraph {
     margin: 3.4rem auto 0;
     width: min(100%, 54rem);
@@ -432,11 +449,13 @@ ul {
     margin: 6rem auto 0;
     display: flex;
     align-items: center;
+    /* justify-content: space-between; */
     width: min(77.08333%, 111rem);
   }
 
   .section-two .subheading {
     width: min(100%, 35rem);
+    margin: 0;
     margin: 0 12.5rem 0 0;
     text-align: left;
   }
@@ -448,6 +467,7 @@ ul {
   }
 
   .section-two .link {
+    margin: 0;
     margin: 0 0 0 auto;
   }
 }
