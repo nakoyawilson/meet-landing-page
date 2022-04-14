@@ -127,6 +127,8 @@ ul {
   position: absolute;
   top: -20.1rem;
   left: 0;
+  right: 0;
+  margin-inline: auto;
   background-image: url("../assets/tablet/image-hero.png");
   background-size: 414px 153px;
   background-position: center;
@@ -256,4 +258,97 @@ ul {
   background: var(--purple);
   padding: 1.6rem 4rem;
   margin: 3.2rem auto 0;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+  /* Shared Styles */
+
+  .container {
+    width: min(89.7%, 68.9rem);
+  }
+
+  /* Hero */
+
+  .hero {
+    margin: 43.9rem auto 0;
+  }
+
+  .main-heading {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    /* width: min(100%, 33.9rem); */
+    margin: 0 auto;
+  }
+
+  .main-heading::before {
+    width: 768px;
+    height: 303px;
+    top: -37.5rem;
+    background-size: 820px 303px;
+  }
+
+  .hero .paragraph {
+    width: min(100%, 45.7rem);
+  }
+
+  .hero .links {
+    flex-direction: row;
+  }
+
+  /* Section One */
+
+  .section-one {
+    margin: 16.4rem auto 0;
+  }
+
+  .section-one .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 1.1rem;
+    margin-top: 6.7rem;
+  }
+
+  .section-one .subheading {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    letter-spacing: 4px;
+    margin-top: 4.8rem;
+  }
+
+  .section-one .feature-heading {
+    font-size: 4rem;
+    line-height: 4.4rem;
+    margin: 1.6rem auto 0;
+    width: min(100%, 44.5rem);
+  }
+
+  .section-one .paragraph {
+    width: min(100%, 57.3rem);
+    margin: 3.2rem auto 0;
+  }
+
+  /* Section Two */
+
+  .section-two {
+    margin-top: 19.2rem;
+    background-image: url("../assets/tablet/image-footer.jpg");
+    padding-bottom: 6.6rem;
+  }
+
+  .section-two .subheading {
+    font-size: 4rem;
+    line-height: 4.4rem;
+    width: min(100%, 45.7rem);
+  }
+
+  .section-two .paragraph {
+    width: min(100%, 57.3rem);
+    margin: 3.2rem auto 0;
+  }
+
+  .section-two .link {
+    margin: 4rem auto 0;
+  }
 }
