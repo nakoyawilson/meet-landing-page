@@ -470,14 +470,13 @@ ul {
     margin: 6rem auto 0;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     width: min(77.08333%, 111rem);
   }
 
   .section-two .subheading {
     width: min(100%, 35rem);
     margin: 0;
-    margin: 0 12.5rem 0 0;
     text-align: left;
   }
 
@@ -490,7 +489,6 @@ ul {
 
   .section-two .link {
     margin: 0;
-    margin: 0 0 0 auto;
   }
 
   .section-two .link:hover {
