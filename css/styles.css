@@ -407,7 +407,7 @@ ul {
     height: 303px;
     position: absolute;
     top: 0.8rem;
-    right: -54rem;
+    right: -52.9rem;
     background-image: url("../assets/desktop/image-hero-right.png");
     background-size: 394px 303px;
     /* background-position: center; */
@@ -425,7 +425,7 @@ ul {
   /* Section One */
 
   .section-one {
-    margin: 20.1rem auto 0;
+    margin: 20rem auto 0;
   }
 
   .section-one .grid {
