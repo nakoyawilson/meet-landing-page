@@ -4,7 +4,9 @@
   --font: "Red Hat Display", sans-serif;
   --cyan: rgb(77, 150, 168);
   --cyan-transparent: rgba(77, 150, 168, 0.9);
+  --cyan-hover: rgb(113, 192, 212);
   --purple: rgb(133, 95, 177);
+  --purple-hover: rgb(177, 139, 221);
   --grayish-purple: rgb(135, 135, 157);
   --grayish-purple-transparent: rgba(135, 135, 157, 0.25);
   --light-blue: rgb(143, 227, 249);
@@ -272,6 +274,10 @@ ul {
   margin: 3.2rem auto 0;
 }
 
+.section-two .version-number {
+  color: var(--light-purple);
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 650px) {
@@ -422,6 +428,14 @@ ul {
     width: min(100%, 54rem);
   }
 
+  .hero .link-wrapper:first-of-type .link:hover {
+    background-color: var(--cyan-hover);
+  }
+
+  .hero .link-wrapper:last-of-type .link:hover {
+    background-color: var(--purple-hover);
+  }
+
   /* Section One */
 
   .section-one {
@@ -473,5 +487,9 @@ ul {
   .section-two .link {
     margin: 0;
     margin: 0 0 0 auto;
+  }
+
+  .section-two .link:hover {
+    background-color: var(--purple-hover);
   }
 }
