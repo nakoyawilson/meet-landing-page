@@ -376,6 +376,10 @@ ul {
     font-size: 1.8rem;
   }
 
+  .header .logo {
+    margin: 8rem auto 0;
+  }
+
   /* Hero */
 
   .hero {
