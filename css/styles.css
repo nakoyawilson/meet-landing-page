@@ -228,12 +228,12 @@ ul {
   left: 0;
 }
 
-.section-two > * {
-  z-index: 10;
-}
-
 .section-two .marker {
   top: -2.8rem;
+}
+
+.section-two .content-wrapper {
+  margin-top: 3.6rem;
 }
 
 .section-two .subheading {
@@ -242,7 +242,7 @@ ul {
   line-height: 3.6rem;
   text-align: center;
   width: min(87.2%, 32.7rem);
-  margin: 3.6rem auto 0;
+  margin: 0 auto;
 }
 
 .section-two .paragraph {
@@ -350,5 +350,104 @@ ul {
 
   .section-two .link {
     margin: 4rem auto 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* Shared Styles */
+
+  .container {
+    width: min(77.08333%, 111rem);
+  }
+
+  .paragraph {
+    font-size: 1.8rem;
+  }
+
+  /* Hero */
+
+  .hero {
+    margin: 10.8rem auto 0;
+  }
+
+  .main-heading {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+    width: min(100%, 44.5rem);
+    margin: 0 auto;
+  }
+
+  .main-heading::before {
+    width: 394px;
+    top: 0;
+    left: -100rem;
+    background-size: 394px 303px;
+    background-image: url("../assets/desktop/image-hero-left.png");
+  }
+
+  .main-heading::after {
+    content: "";
+    width: 394px;
+    height: 303px;
+    position: absolute;
+    top: 0;
+    right: -54rem;
+    background-image: url("../assets/desktop/image-hero-right.png");
+    background-size: 394px 303px;
+    /* background-position: center; */
+  }
+
+  .hero .paragraph {
+    margin: 3.4rem auto 0;
+    width: min(100%, 54rem);
+  }
+
+  /* Section One */
+
+  .section-one {
+    margin: 20.1rem auto 0;
+  }
+
+  .section-one .grid {
+    gap: 3rem;
+    margin-top: 6.4rem;
+  }
+
+  .section-one .subheading {
+    margin-top: 8rem;
+  }
+
+  .section-one .paragraph {
+    width: min(100%, 54rem);
+  }
+
+  /* Section Two */
+
+  .section-two {
+    margin-top: 18.4rem;
+    background-image: url("../assets/desktop/image-footer.jpg");
+    padding-bottom: 10.4rem;
+  }
+
+  .section-two .content-wrapper {
+    margin: 6rem auto 0;
+    display: flex;
+    align-items: center;
+    width: min(77.08333%, 111rem);
+  }
+
+  .section-two .subheading {
+    width: min(100%, 35rem);
+    margin: 0 12.5rem 0 0;
+    text-align: left;
+  }
+
+  .section-two .paragraph {
+    width: min(100%, 35rem);
+    margin: 0;
+    text-align: left;
+  }
+
+  .section-two .link {
+    margin: 0 0 0 auto;
   }
 }
